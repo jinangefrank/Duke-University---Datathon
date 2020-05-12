@@ -31,7 +31,6 @@ validation = load('/Academics/Fall 2/Datathon/datathon_dataset/validation.csv')
 interest_topics = pd.read_csv("/Academics/Fall 2/Datathon/datathon_dataset/interest_topics.csv")
 training = pd.concat([training1,validation])
 
-# 初步处理数据
 se=training.iloc[:,1]
 user=se.to_frame(name='Inaudience')
 lti=training['ltiFeatures'].apply(pd.Series)
